@@ -1,0 +1,1011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F046DF6FDB8A5DA0420E35D59D66632F /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01252DCA6945F43825AC214470B9E5D0 /* GoogleBooksApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A51D30BF95C1E0D5041DCCD713E2E77 /* GoogleBooksApiRequest.swift */; };
+		045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BC16DD60703C525B1AB3438005A220 /* RedirectHandler.swift */; };
+		04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A948A346FC8ECD573AE8C7CE9ED876F /* Result+Alamofire.swift */; };
+		0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B773DE4D0CD5006211655A2DB4F7C820 /* SessionDelegate.swift */; };
+		1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3500620B9D61FE00976C3624845BBD20 /* AlamofireExtended.swift */; };
+		247C2CC4AB30D2C6FB332FE3B887DB45 /* URLRequestExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A458A41C1C51F24B976D00A44859CAE /* URLRequestExt.swift */; };
+		29CE89D1F2DF49943D213671F4FE1F77 /* Pods-GoogleBookApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEB7FA7D4125F768BE06E49852ECCF1 /* Pods-GoogleBookApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B409859F52E0594812721608A035EDD /* CachedResponseHandler.swift */; };
+		2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427960626E244FF05C3EA4AFC6A82149 /* Notifications.swift */; };
+		33907EC8232B2AF6F43DE51FD0F7C3F4 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2450CB8D91033EB56DD9B23C983899 /* Entity.swift */; };
+		33A7D0F2D03004CE256A75E03DF33C70 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC0F5F445AC5EA8655DBD5AE1651613 /* RetryPolicy.swift */; };
+		39A3F7D3DA6A5C7F04F77A3A25158E5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		3A0D39F4AA04B4DACBFE095F71738E5A /* GoogleApiToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C804FB56123F9E0F7530E3B010EA04 /* GoogleApiToken.swift */; };
+		3C4059621E23842C19D4EB5D35B41989 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D61A81CC95BFB809C9C342B7B4DE42 /* Validation.swift */; };
+		46A64A43AFA057B6B63C8F0C12F509B4 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27602392EABC27CFBA946D275403C716 /* Combine.swift */; };
+		49924EC33E585B42BDB23F60BA1C7F81 /* Deserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7F1BFE0604739A3DC00E3B93EA876 /* Deserializable.swift */; };
+		559AC8FB54F8C23F68FFC138C521A7B6 /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89E5B49A9910A207F88F8A27332324F /* Id.swift */; };
+		55AABB1FB38F61A3369ACC555FF3046D /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BD2A3B50A212830238262A52C27CBD /* Alamofire-dummy.m */; };
+		55EFF716559DBCA64D24A9DEA8B8D5D5 /* GoogleBooksApiAuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DB9476ECB184A0F4CA5268057B45 /* GoogleBooksApiAuthInfo.swift */; };
+		68FB2DCB4C77DBCAF9A6037E470F2BDE /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4587C17BC75BF1E9D89DF57334B7F13 /* ParameterEncoding.swift */; };
+		6B6097BC3DBA6F7658D98590181B6B3A /* BooksKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B389AC15638EA2241F8FFEC720263A8E /* BooksKind.swift */; };
+		71664176CD53938E5F98601DE2EF6455 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 7D0B5A10E53C56B372515B6EE9D5B911 /* Info.plist */; };
+		7483E5327027263F7E4B94A2997191C4 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B1144BF63BDEB94148E4084973966A /* AuthenticationInterceptor.swift */; };
+		75966A9262648D4647D764E3E76BC6AC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D0216F7E07CF2A9A1A679D3F517F7E /* Response.swift */; };
+		7930C94414B4C661867AC4FBE82E996C /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B64F70DB5E562CC726EAFC5B8A1C20 /* URLEncodedFormEncoder.swift */; };
+		7B068137A8925891446203B5D3D6A4ED /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
+		7C752994A88EF681A09BC1642CEBC827 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA8F27E7CABCB4274172DFAC3F2BFA3 /* Either.swift */; };
+		7E02F5B62BE00E97847DF549FFED2490 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC6DD3CF53B79E9BC8540757EEBA15 /* HTTPHeaders.swift */; };
+		7F1BB526AAE3ECDCE90127D9D0E10261 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8503A3D4773F3CB0FACC9D0BB987DD1 /* StringEncoding+Alamofire.swift */; };
+		7FE695DA8EE7FF1286556E06B692009B /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428081FC7477162CCC5466E3D6C53A98 /* MultipartFormData.swift */; };
+		808C960C82D708FC1A42C581D6CB4940 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99C4B2BB4FCEF7562734C239837982 /* URLSessionConfiguration+Alamofire.swift */; };
+		81B8D2B7CEB25C2448B0BC9B33591A65 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AC9D631E79477DAC893FD74E755108 /* Session.swift */; };
+		824D816B1EE404F2DD400EE678695CBE /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791F531F721A8E23698A2DE4E3C4F26 /* ResponseSerialization.swift */; };
+		886768645F68B038FAAB42E470C1AD2E /* GoogleBooksApiClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB836DAA01A8B25DB372521515E539C1 /* GoogleBooksApiClient-dummy.m */; };
+		8D75FC8D7476C9674234F39F1A820D8C /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6DCDA4675602AC6B889918261CEB0E /* URLConvertible+URLRequestConvertible.swift */; };
+		99D058E53EFEE3AC4857CDE3DBA5C004 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3B9C07BC340A631BFE904001C5BAE /* ParameterEncoder.swift */; };
+		9B1D5E5E52B9D6C48C8410D245655C4B /* Pods-GoogleBookApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F12E0D471AF887BACA7E9DFF7BAA867 /* Pods-GoogleBookApp-dummy.m */; };
+		9C9030DEDB0DF955B16FE08C50892D57 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F134AAC250171C5EFE925DF7C49EC2B /* Concurrency.swift */; };
+		9D6D632CAFB2120821739B37D92707ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		9F3D2AB8E9A66D354CED543E2E4C7E38 /* GoogleBooksApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74759864F882DFCB5F6B7BAA57416CD /* GoogleBooksApiClient.swift */; };
+		A017950015908B90A2B173B01F3CB2AC /* Bookshelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C9A7BD7651635E71DB317705DDB6C0 /* Bookshelf.swift */; };
+		A29100AA1876DDEFF6F54694A51FDB0E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C17E0BB54830DE1FC89017536743EF /* NetworkReachabilityManager.swift */; };
+		A53BDE589BDD6483F3EEDCE5EA1DCCD3 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C0509C19FA13C64C0B54135E6180B /* Protected.swift */; };
+		A57B39E4920DBD5EA36CD8E17797B9AB /* BookshelfJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A1DF27A63D62FDFBDFEDFD8DCBF07A /* BookshelfJson.swift */; };
+		B3658C29BBDE1033F6269A92E612CB30 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC95A3F4F5464013342FD72B50CAC0FD /* Request.swift */; };
+		B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFCD8CF5E40FC5499E6B51935417A75 /* ServerTrustEvaluation.swift */; };
+		B76562466ADD286737B74C56E321BAB7 /* DownloadAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25103EF3AF9362FADADB1C3B587EA528 /* DownloadAccess.swift */; };
+		B81D36533A87DCEAAF01B66188684B42 /* GoogleBooksApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7DF1C766DE28C30E7851544E5C1409 /* GoogleBooksApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC0ECA8F22DEDE8886E189CD0EAA1197 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EB61A7BE6F5DB007D125A53ED27C4 /* URLRequest+Alamofire.swift */; };
+		CA53B38CDCD16507235532A65DF628D0 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB310BB43E37842EEF3FD6D107406ADA /* Volume.swift */; };
+		CEBFFEED65D877702B2F36102528CF6D /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4FC42CE6B3521A0C15301EA3BAE5B1 /* EventMonitor.swift */; };
+		D0EA90FBF83350C49E6EF6C8A98D6F00 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C85F57EF123F90D5BD0AA103A9B910 /* AFError.swift */; };
+		D6B4751CED01D53E4A1B6A571AAA2F83 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEB01D535825359538C69A5DB397693 /* HTTPMethod.swift */; };
+		DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F98EA979D7B65DF0E262008EA3072 /* RequestTaskMap.swift */; };
+		DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF85A5857FB0E2656B437D6F799D4C /* RequestInterceptor.swift */; };
+		E44F01E27FBBC5AC59D4E62CB7F8099C /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B2675C3670037AFAFD1E131A1550F /* HttpClient.swift */; };
+		E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C1EFD5D209A3779A826D8A08016492 /* OperationQueue+Alamofire.swift */; };
+		E98ADB848F4976DD18BE7B928C9D0B5C /* GoogleBooksApiClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D8E801F9E13956FC87CCDDDDB0AAF4B /* GoogleBooksApiClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9B4C89E7EB3B27D46AFCA452C3D426F /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E83B4880C53DC7225A70F15E7FDD26E /* MultipartUpload.swift */; };
+		ECE8D6C4C2915BD55703BAD5BD703FC1 /* GoogleApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7524E2BCBBCF71345169EC70A5E0B3 /* GoogleApiRequest.swift */; };
+		EEC150B66BCCD6C80FDA7E4D1975166B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4AAD3F52B804B3C3D3568F9BD6BC7A /* DispatchQueue+Alamofire.swift */; };
+		F080E936DF2CF256772723DBA59A2DD0 /* VolumeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C2E3E4252B098B52EB7D9D280EB156 /* VolumeJson.swift */; };
+		F17A4CA4664CABB331D39FE902E06843 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C963BAB845BDCA4536D1B7E7059836D /* Alamofire.swift */; };
+		F21C8BDD2277EE0204D209326508981E /* ValueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4331728F93276C4510971AECB1F263 /* ValueObject.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3449F6B33ED387024715512EBF41E738 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		6884C9437EBC71004861C8622CC40CA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C432FFBAA7B7EF1F916A0FA68875DB5;
+			remoteInfo = GoogleBooksApiClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F6FDB4FC5A3F42F4A32257AE5E7BB2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		0A7524E2BCBBCF71345169EC70A5E0B3 /* GoogleApiRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleApiRequest.swift; path = GoogleBooksApiClient/GoogleApiRequest.swift; sourceTree = "<group>"; };
+		0CEC6DD3CF53B79E9BC8540757EEBA15 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		0E83B4880C53DC7225A70F15E7FDD26E /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		0F2B7922B515FCC2D38D49179E340F7C /* GoogleBooksApiClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleBooksApiClient.debug.xcconfig; sourceTree = "<group>"; };
+		11C804FB56123F9E0F7530E3B010EA04 /* GoogleApiToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleApiToken.swift; path = GoogleBooksApiClient/GoogleApiToken.swift; sourceTree = "<group>"; };
+		18B7F1BFE0604739A3DC00E3B93EA876 /* Deserializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deserializable.swift; path = GoogleBooksApiClient/Json/Deserializable.swift; sourceTree = "<group>"; };
+		1B4FC42CE6B3521A0C15301EA3BAE5B1 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		1C963BAB845BDCA4536D1B7E7059836D /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		1DEB01D535825359538C69A5DB397693 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		1FEB7FA7D4125F768BE06E49852ECCF1 /* Pods-GoogleBookApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoogleBookApp-umbrella.h"; sourceTree = "<group>"; };
+		25103EF3AF9362FADADB1C3B587EA528 /* DownloadAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownloadAccess.swift; path = GoogleBooksApiClient/Model/DownloadAccess.swift; sourceTree = "<group>"; };
+		26C1EFD5D209A3779A826D8A08016492 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		26CF85A5857FB0E2656B437D6F799D4C /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		27602392EABC27CFBA946D275403C716 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		29C3B9C07BC340A631BFE904001C5BAE /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		32A1DF27A63D62FDFBDFEDFD8DCBF07A /* BookshelfJson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BookshelfJson.swift; path = GoogleBooksApiClient/Json/BookshelfJson.swift; sourceTree = "<group>"; };
+		344B2675C3670037AFAFD1E131A1550F /* HttpClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpClient.swift; path = GoogleBooksApiClient/HttpClient.swift; sourceTree = "<group>"; };
+		3500620B9D61FE00976C3624845BBD20 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		3791F531F721A8E23698A2DE4E3C4F26 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3A458A41C1C51F24B976D00A44859CAE /* URLRequestExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequestExt.swift; path = GoogleBooksApiClient/Util/URLRequestExt.swift; sourceTree = "<group>"; };
+		3C867ABCF2110157C27FB47DCA59CA40 /* Pods-GoogleBookApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoogleBookApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CA8F27E7CABCB4274172DFAC3F2BFA3 /* Either.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Either.swift; path = GoogleBooksApiClient/Util/Either.swift; sourceTree = "<group>"; };
+		427960626E244FF05C3EA4AFC6A82149 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		428081FC7477162CCC5466E3D6C53A98 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		48DDBE5C55DCAC7EE534162F2C7B8F51 /* Pods-GoogleBookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBookApp.release.xcconfig"; sourceTree = "<group>"; };
+		4C99C4B2BB4FCEF7562734C239837982 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		4D7DF1C766DE28C30E7851544E5C1409 /* GoogleBooksApiClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleBooksApiClient.h; path = GoogleBooksApiClient/GoogleBooksApiClient.h; sourceTree = "<group>"; };
+		4F134AAC250171C5EFE925DF7C49EC2B /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
+		4FFCD8CF5E40FC5499E6B51935417A75 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		570C61B8F4285EFF2A41BC86699A9F2A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		58D61A81CC95BFB809C9C342B7B4DE42 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		59B1144BF63BDEB94148E4084973966A /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF5E579AC7AEED1A5CA68CA1DC9B3C3 /* Pods-GoogleBookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoogleBookApp.debug.xcconfig"; sourceTree = "<group>"; };
+		63FA878AE1D0B394BBE5E58178208886 /* Pods-GoogleBookApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GoogleBookApp"; path = Pods_GoogleBookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C17E0BB54830DE1FC89017536743EF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		66D0216F7E07CF2A9A1A679D3F517F7E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		68C9A7BD7651635E71DB317705DDB6C0 /* Bookshelf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bookshelf.swift; path = GoogleBooksApiClient/Model/Bookshelf.swift; sourceTree = "<group>"; };
+		6948DB9476ECB184A0F4CA5268057B45 /* GoogleBooksApiAuthInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleBooksApiAuthInfo.swift; path = GoogleBooksApiClient/GoogleBooksApiAuthInfo.swift; sourceTree = "<group>"; };
+		6A51D30BF95C1E0D5041DCCD713E2E77 /* GoogleBooksApiRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleBooksApiRequest.swift; path = GoogleBooksApiClient/GoogleBooksApiRequest.swift; sourceTree = "<group>"; };
+		71C85F57EF123F90D5BD0AA103A9B910 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		74E59E006F38A8D2F9A96C78C3F37B0A /* GoogleBooksApiClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleBooksApiClient-prefix.pch"; sourceTree = "<group>"; };
+		772B959D718CEA106F08C4637B9DB566 /* GoogleBooksApiClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleBooksApiClient.release.xcconfig; sourceTree = "<group>"; };
+		7D0B5A10E53C56B372515B6EE9D5B911 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GoogleBooksApiClient/Info.plist; sourceTree = "<group>"; };
+		7E96170C79C2F6A1D8DA5455FB1CC1D1 /* GoogleBooksApiClient */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleBooksApiClient; path = GoogleBooksApiClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AC9D631E79477DAC893FD74E755108 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		84CC0A61419629430EFD62AE95651051 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		88140E5F117BC1EF53402F66B74DFB08 /* GoogleBooksApiClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleBooksApiClient.modulemap; sourceTree = "<group>"; };
+		8A948A346FC8ECD573AE8C7CE9ED876F /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		934EB61A7BE6F5DB007D125A53ED27C4 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		9A6DCDA4675602AC6B889918261CEB0E /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		9B409859F52E0594812721608A035EDD /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		9C4AAD3F52B804B3C3D3568F9BD6BC7A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		9D4331728F93276C4510971AECB1F263 /* ValueObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueObject.swift; path = GoogleBooksApiClient/Model/ValueObject.swift; sourceTree = "<group>"; };
+		9D8E801F9E13956FC87CCDDDDB0AAF4B /* GoogleBooksApiClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleBooksApiClient-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F12E0D471AF887BACA7E9DFF7BAA867 /* Pods-GoogleBookApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoogleBookApp-dummy.m"; sourceTree = "<group>"; };
+		A22C0509C19FA13C64C0B54135E6180B /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		A5BD2A3B50A212830238262A52C27CBD /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		AC95A3F4F5464013342FD72B50CAC0FD /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		B389AC15638EA2241F8FFEC720263A8E /* BooksKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooksKind.swift; path = GoogleBooksApiClient/Model/BooksKind.swift; sourceTree = "<group>"; };
+		B4587C17BC75BF1E9D89DF57334B7F13 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		B6C43780F7AA2971EC6B5033A77D6AB2 /* Pods-GoogleBookApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoogleBookApp.modulemap"; sourceTree = "<group>"; };
+		B773DE4D0CD5006211655A2DB4F7C820 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		B89E5B49A9910A207F88F8A27332324F /* Id.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Id.swift; path = GoogleBooksApiClient/Model/Id.swift; sourceTree = "<group>"; };
+		BB836DAA01A8B25DB372521515E539C1 /* GoogleBooksApiClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleBooksApiClient-dummy.m"; sourceTree = "<group>"; };
+		BDC91A525C5D987BE77645CEE321692D /* Pods-GoogleBookApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleBookApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7C703B076140E305B4C3C39B79B7672 /* GoogleBooksApiClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GoogleBooksApiClient-Info.plist"; sourceTree = "<group>"; };
+		C8503A3D4773F3CB0FACC9D0BB987DD1 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		CB310BB43E37842EEF3FD6D107406ADA /* Volume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Volume.swift; path = GoogleBooksApiClient/Model/Volume.swift; sourceTree = "<group>"; };
+		D5B64F70DB5E562CC726EAFC5B8A1C20 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		D9B3C1F64D6ECC741FCC44E001CB85C2 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		DDC0F5F445AC5EA8655DBD5AE1651613 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		EF2450CB8D91033EB56DD9B23C983899 /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = GoogleBooksApiClient/Model/Entity.swift; sourceTree = "<group>"; };
+		EF4F98EA979D7B65DF0E262008EA3072 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		F046DF6FDB8A5DA0420E35D59D66632F /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		F0C066F07F60B8A015B95E9CC406A28D /* Pods-GoogleBookApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GoogleBookApp-frameworks.sh"; sourceTree = "<group>"; };
+		F0C2E3E4252B098B52EB7D9D280EB156 /* VolumeJson.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VolumeJson.swift; path = GoogleBooksApiClient/Json/VolumeJson.swift; sourceTree = "<group>"; };
+		F2BC16DD60703C525B1AB3438005A220 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		F2C7609CDEA83EF7505CC48149B902C1 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		F74759864F882DFCB5F6B7BAA57416CD /* GoogleBooksApiClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleBooksApiClient.swift; path = GoogleBooksApiClient/GoogleBooksApiClient.swift; sourceTree = "<group>"; };
+		FA60366829819A34475A6694F906CBE0 /* Pods-GoogleBookApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoogleBookApp-Info.plist"; sourceTree = "<group>"; };
+		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15DC142A7EE833251AA37FC8E2B8E01F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B068137A8925891446203B5D3D6A4ED /* CFNetwork.framework in Frameworks */,
+				0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CFC4E86448D376A29AAC4DBC1D79124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6D632CAFB2120821739B37D92707ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		839D11EA9B063C96EC8FF60B8F44C773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A3F7D3DA6A5C7F04F77A3A25158E5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E964CFC05334EF1869BCFA14FB401C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88140E5F117BC1EF53402F66B74DFB08 /* GoogleBooksApiClient.modulemap */,
+				BB836DAA01A8B25DB372521515E539C1 /* GoogleBooksApiClient-dummy.m */,
+				C7C703B076140E305B4C3C39B79B7672 /* GoogleBooksApiClient-Info.plist */,
+				74E59E006F38A8D2F9A96C78C3F37B0A /* GoogleBooksApiClient-prefix.pch */,
+				9D8E801F9E13956FC87CCDDDDB0AAF4B /* GoogleBooksApiClient-umbrella.h */,
+				0F2B7922B515FCC2D38D49179E340F7C /* GoogleBooksApiClient.debug.xcconfig */,
+				772B959D718CEA106F08C4637B9DB566 /* GoogleBooksApiClient.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleBooksApiClient";
+			sourceTree = "<group>";
+		};
+		460CA230A7C0834B72BC99C2FF123F5D /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				71C85F57EF123F90D5BD0AA103A9B910 /* AFError.swift */,
+				1C963BAB845BDCA4536D1B7E7059836D /* Alamofire.swift */,
+				3500620B9D61FE00976C3624845BBD20 /* AlamofireExtended.swift */,
+				59B1144BF63BDEB94148E4084973966A /* AuthenticationInterceptor.swift */,
+				9B409859F52E0594812721608A035EDD /* CachedResponseHandler.swift */,
+				27602392EABC27CFBA946D275403C716 /* Combine.swift */,
+				4F134AAC250171C5EFE925DF7C49EC2B /* Concurrency.swift */,
+				9C4AAD3F52B804B3C3D3568F9BD6BC7A /* DispatchQueue+Alamofire.swift */,
+				1B4FC42CE6B3521A0C15301EA3BAE5B1 /* EventMonitor.swift */,
+				0CEC6DD3CF53B79E9BC8540757EEBA15 /* HTTPHeaders.swift */,
+				1DEB01D535825359538C69A5DB397693 /* HTTPMethod.swift */,
+				428081FC7477162CCC5466E3D6C53A98 /* MultipartFormData.swift */,
+				0E83B4880C53DC7225A70F15E7FDD26E /* MultipartUpload.swift */,
+				65C17E0BB54830DE1FC89017536743EF /* NetworkReachabilityManager.swift */,
+				427960626E244FF05C3EA4AFC6A82149 /* Notifications.swift */,
+				26C1EFD5D209A3779A826D8A08016492 /* OperationQueue+Alamofire.swift */,
+				29C3B9C07BC340A631BFE904001C5BAE /* ParameterEncoder.swift */,
+				B4587C17BC75BF1E9D89DF57334B7F13 /* ParameterEncoding.swift */,
+				A22C0509C19FA13C64C0B54135E6180B /* Protected.swift */,
+				F2BC16DD60703C525B1AB3438005A220 /* RedirectHandler.swift */,
+				AC95A3F4F5464013342FD72B50CAC0FD /* Request.swift */,
+				26CF85A5857FB0E2656B437D6F799D4C /* RequestInterceptor.swift */,
+				EF4F98EA979D7B65DF0E262008EA3072 /* RequestTaskMap.swift */,
+				66D0216F7E07CF2A9A1A679D3F517F7E /* Response.swift */,
+				3791F531F721A8E23698A2DE4E3C4F26 /* ResponseSerialization.swift */,
+				8A948A346FC8ECD573AE8C7CE9ED876F /* Result+Alamofire.swift */,
+				DDC0F5F445AC5EA8655DBD5AE1651613 /* RetryPolicy.swift */,
+				4FFCD8CF5E40FC5499E6B51935417A75 /* ServerTrustEvaluation.swift */,
+				84AC9D631E79477DAC893FD74E755108 /* Session.swift */,
+				B773DE4D0CD5006211655A2DB4F7C820 /* SessionDelegate.swift */,
+				C8503A3D4773F3CB0FACC9D0BB987DD1 /* StringEncoding+Alamofire.swift */,
+				9A6DCDA4675602AC6B889918261CEB0E /* URLConvertible+URLRequestConvertible.swift */,
+				D5B64F70DB5E562CC726EAFC5B8A1C20 /* URLEncodedFormEncoder.swift */,
+				934EB61A7BE6F5DB007D125A53ED27C4 /* URLRequest+Alamofire.swift */,
+				4C99C4B2BB4FCEF7562734C239837982 /* URLSessionConfiguration+Alamofire.swift */,
+				58D61A81CC95BFB809C9C342B7B4DE42 /* Validation.swift */,
+				877D1CC4DAE6EC2BBDC0483F9C4B18AC /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		520A1026066AECAF67F6377A2E393601 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460CA230A7C0834B72BC99C2FF123F5D /* Alamofire */,
+				7943F0EC10419CFB4BB1F5439D032C56 /* GoogleBooksApiClient */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52E934F2FB9D27F0709615002CB010D7 /* Pods-GoogleBookApp */ = {
+			isa = PBXGroup;
+			children = (
+				B6C43780F7AA2971EC6B5033A77D6AB2 /* Pods-GoogleBookApp.modulemap */,
+				3C867ABCF2110157C27FB47DCA59CA40 /* Pods-GoogleBookApp-acknowledgements.markdown */,
+				BDC91A525C5D987BE77645CEE321692D /* Pods-GoogleBookApp-acknowledgements.plist */,
+				9F12E0D471AF887BACA7E9DFF7BAA867 /* Pods-GoogleBookApp-dummy.m */,
+				F0C066F07F60B8A015B95E9CC406A28D /* Pods-GoogleBookApp-frameworks.sh */,
+				FA60366829819A34475A6694F906CBE0 /* Pods-GoogleBookApp-Info.plist */,
+				1FEB7FA7D4125F768BE06E49852ECCF1 /* Pods-GoogleBookApp-umbrella.h */,
+				5FF5E579AC7AEED1A5CA68CA1DC9B3C3 /* Pods-GoogleBookApp.debug.xcconfig */,
+				48DDBE5C55DCAC7EE534162F2C7B8F51 /* Pods-GoogleBookApp.release.xcconfig */,
+			);
+			name = "Pods-GoogleBookApp";
+			path = "Target Support Files/Pods-GoogleBookApp";
+			sourceTree = "<group>";
+		};
+		61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */,
+				FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7943F0EC10419CFB4BB1F5439D032C56 /* GoogleBooksApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				68C9A7BD7651635E71DB317705DDB6C0 /* Bookshelf.swift */,
+				32A1DF27A63D62FDFBDFEDFD8DCBF07A /* BookshelfJson.swift */,
+				B389AC15638EA2241F8FFEC720263A8E /* BooksKind.swift */,
+				18B7F1BFE0604739A3DC00E3B93EA876 /* Deserializable.swift */,
+				25103EF3AF9362FADADB1C3B587EA528 /* DownloadAccess.swift */,
+				3CA8F27E7CABCB4274172DFAC3F2BFA3 /* Either.swift */,
+				EF2450CB8D91033EB56DD9B23C983899 /* Entity.swift */,
+				0A7524E2BCBBCF71345169EC70A5E0B3 /* GoogleApiRequest.swift */,
+				11C804FB56123F9E0F7530E3B010EA04 /* GoogleApiToken.swift */,
+				6948DB9476ECB184A0F4CA5268057B45 /* GoogleBooksApiAuthInfo.swift */,
+				4D7DF1C766DE28C30E7851544E5C1409 /* GoogleBooksApiClient.h */,
+				F74759864F882DFCB5F6B7BAA57416CD /* GoogleBooksApiClient.swift */,
+				6A51D30BF95C1E0D5041DCCD713E2E77 /* GoogleBooksApiRequest.swift */,
+				344B2675C3670037AFAFD1E131A1550F /* HttpClient.swift */,
+				B89E5B49A9910A207F88F8A27332324F /* Id.swift */,
+				7D0B5A10E53C56B372515B6EE9D5B911 /* Info.plist */,
+				3A458A41C1C51F24B976D00A44859CAE /* URLRequestExt.swift */,
+				9D4331728F93276C4510971AECB1F263 /* ValueObject.swift */,
+				CB310BB43E37842EEF3FD6D107406ADA /* Volume.swift */,
+				F0C2E3E4252B098B52EB7D9D280EB156 /* VolumeJson.swift */,
+				2E964CFC05334EF1869BCFA14FB401C0 /* Support Files */,
+			);
+			name = GoogleBooksApiClient;
+			path = GoogleBooksApiClient;
+			sourceTree = "<group>";
+		};
+		877D1CC4DAE6EC2BBDC0483F9C4B18AC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				570C61B8F4285EFF2A41BC86699A9F2A /* Alamofire.modulemap */,
+				A5BD2A3B50A212830238262A52C27CBD /* Alamofire-dummy.m */,
+				D9B3C1F64D6ECC741FCC44E001CB85C2 /* Alamofire-Info.plist */,
+				05F6FDB4FC5A3F42F4A32257AE5E7BB2 /* Alamofire-prefix.pch */,
+				F046DF6FDB8A5DA0420E35D59D66632F /* Alamofire-umbrella.h */,
+				F2C7609CDEA83EF7505CC48149B902C1 /* Alamofire.debug.xcconfig */,
+				84CC0A61419629430EFD62AE95651051 /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				520A1026066AECAF67F6377A2E393601 /* Pods */,
+				EEAF4C85E3CDBDADAA4BCA8FD9935F9B /* Products */,
+				D050176E521AA6656161CCF3FB08085D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D050176E521AA6656161CCF3FB08085D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E934F2FB9D27F0709615002CB010D7 /* Pods-GoogleBookApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EEAF4C85E3CDBDADAA4BCA8FD9935F9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				7E96170C79C2F6A1D8DA5455FB1CC1D1 /* GoogleBooksApiClient */,
+				63FA878AE1D0B394BBE5E58178208886 /* Pods-GoogleBookApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52E6F7B26483BE3BC9393C6C05D32424 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73705D432DEABD3D94DD8F4377D58DAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29CE89D1F2DF49943D213671F4FE1F77 /* Pods-GoogleBookApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DBBAE3DD02FDE0C3916142F3691B98D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81D36533A87DCEAAF01B66188684B42 /* GoogleBooksApiClient.h in Headers */,
+				E98ADB848F4976DD18BE7B928C9D0B5C /* GoogleBooksApiClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3C432FFBAA7B7EF1F916A0FA68875DB5 /* GoogleBooksApiClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2506533119638486DA638ADBC043AD24 /* Build configuration list for PBXNativeTarget "GoogleBooksApiClient" */;
+			buildPhases = (
+				7DBBAE3DD02FDE0C3916142F3691B98D /* Headers */,
+				3F90E36BBC35EBAA0761E551058424E7 /* Sources */,
+				5CFC4E86448D376A29AAC4DBC1D79124 /* Frameworks */,
+				F67CE745350570FEC03B794F8C4D5241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleBooksApiClient;
+			productName = GoogleBooksApiClient;
+			productReference = 7E96170C79C2F6A1D8DA5455FB1CC1D1 /* GoogleBooksApiClient */;
+			productType = "com.apple.product-type.framework";
+		};
+		42F9E6E7A76BE484EDDE6E68785866B3 /* Pods-GoogleBookApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A15A2CCC0AAA8B426A33B0A57EC8C7C2 /* Build configuration list for PBXNativeTarget "Pods-GoogleBookApp" */;
+			buildPhases = (
+				73705D432DEABD3D94DD8F4377D58DAC /* Headers */,
+				12252D1263E5EEA594D9681B9317A2F2 /* Sources */,
+				839D11EA9B063C96EC8FF60B8F44C773 /* Frameworks */,
+				62DB5A9D2B1C32F01C818C677ADAE135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				676FDD47E8774908C2571029570CEE66 /* PBXTargetDependency */,
+				8C2FB0FB8176AFB3A4646B2DA0BEABE0 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoogleBookApp";
+			productName = Pods_GoogleBookApp;
+			productReference = 63FA878AE1D0B394BBE5E58178208886 /* Pods-GoogleBookApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A212264186B8822192F9C369D7DE4BB /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				52E6F7B26483BE3BC9393C6C05D32424 /* Headers */,
+				F5D2A45FBA06D86A537CB441D5BF4FF4 /* Sources */,
+				15DC142A7EE833251AA37FC8E2B8E01F /* Frameworks */,
+				E9D4145FA41F60FFAB33A07796D9ED97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EEAF4C85E3CDBDADAA4BCA8FD9935F9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				3C432FFBAA7B7EF1F916A0FA68875DB5 /* GoogleBooksApiClient */,
+				42F9E6E7A76BE484EDDE6E68785866B3 /* Pods-GoogleBookApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62DB5A9D2B1C32F01C818C677ADAE135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D4145FA41F60FFAB33A07796D9ED97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67CE745350570FEC03B794F8C4D5241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12252D1263E5EEA594D9681B9317A2F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1D5E5E52B9D6C48C8410D245655C4B /* Pods-GoogleBookApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F90E36BBC35EBAA0761E551058424E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A017950015908B90A2B173B01F3CB2AC /* Bookshelf.swift in Sources */,
+				A57B39E4920DBD5EA36CD8E17797B9AB /* BookshelfJson.swift in Sources */,
+				6B6097BC3DBA6F7658D98590181B6B3A /* BooksKind.swift in Sources */,
+				49924EC33E585B42BDB23F60BA1C7F81 /* Deserializable.swift in Sources */,
+				B76562466ADD286737B74C56E321BAB7 /* DownloadAccess.swift in Sources */,
+				7C752994A88EF681A09BC1642CEBC827 /* Either.swift in Sources */,
+				33907EC8232B2AF6F43DE51FD0F7C3F4 /* Entity.swift in Sources */,
+				ECE8D6C4C2915BD55703BAD5BD703FC1 /* GoogleApiRequest.swift in Sources */,
+				3A0D39F4AA04B4DACBFE095F71738E5A /* GoogleApiToken.swift in Sources */,
+				55EFF716559DBCA64D24A9DEA8B8D5D5 /* GoogleBooksApiAuthInfo.swift in Sources */,
+				9F3D2AB8E9A66D354CED543E2E4C7E38 /* GoogleBooksApiClient.swift in Sources */,
+				886768645F68B038FAAB42E470C1AD2E /* GoogleBooksApiClient-dummy.m in Sources */,
+				01252DCA6945F43825AC214470B9E5D0 /* GoogleBooksApiRequest.swift in Sources */,
+				E44F01E27FBBC5AC59D4E62CB7F8099C /* HttpClient.swift in Sources */,
+				559AC8FB54F8C23F68FFC138C521A7B6 /* Id.swift in Sources */,
+				71664176CD53938E5F98601DE2EF6455 /* Info.plist in Sources */,
+				247C2CC4AB30D2C6FB332FE3B887DB45 /* URLRequestExt.swift in Sources */,
+				F21C8BDD2277EE0204D209326508981E /* ValueObject.swift in Sources */,
+				CA53B38CDCD16507235532A65DF628D0 /* Volume.swift in Sources */,
+				F080E936DF2CF256772723DBA59A2DD0 /* VolumeJson.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D2A45FBA06D86A537CB441D5BF4FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EA90FBF83350C49E6EF6C8A98D6F00 /* AFError.swift in Sources */,
+				F17A4CA4664CABB331D39FE902E06843 /* Alamofire.swift in Sources */,
+				55AABB1FB38F61A3369ACC555FF3046D /* Alamofire-dummy.m in Sources */,
+				1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */,
+				7483E5327027263F7E4B94A2997191C4 /* AuthenticationInterceptor.swift in Sources */,
+				2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */,
+				46A64A43AFA057B6B63C8F0C12F509B4 /* Combine.swift in Sources */,
+				9C9030DEDB0DF955B16FE08C50892D57 /* Concurrency.swift in Sources */,
+				EEC150B66BCCD6C80FDA7E4D1975166B /* DispatchQueue+Alamofire.swift in Sources */,
+				CEBFFEED65D877702B2F36102528CF6D /* EventMonitor.swift in Sources */,
+				7E02F5B62BE00E97847DF549FFED2490 /* HTTPHeaders.swift in Sources */,
+				D6B4751CED01D53E4A1B6A571AAA2F83 /* HTTPMethod.swift in Sources */,
+				7FE695DA8EE7FF1286556E06B692009B /* MultipartFormData.swift in Sources */,
+				E9B4C89E7EB3B27D46AFCA452C3D426F /* MultipartUpload.swift in Sources */,
+				A29100AA1876DDEFF6F54694A51FDB0E /* NetworkReachabilityManager.swift in Sources */,
+				2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */,
+				E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */,
+				99D058E53EFEE3AC4857CDE3DBA5C004 /* ParameterEncoder.swift in Sources */,
+				68FB2DCB4C77DBCAF9A6037E470F2BDE /* ParameterEncoding.swift in Sources */,
+				A53BDE589BDD6483F3EEDCE5EA1DCCD3 /* Protected.swift in Sources */,
+				045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */,
+				B3658C29BBDE1033F6269A92E612CB30 /* Request.swift in Sources */,
+				DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */,
+				DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */,
+				75966A9262648D4647D764E3E76BC6AC /* Response.swift in Sources */,
+				824D816B1EE404F2DD400EE678695CBE /* ResponseSerialization.swift in Sources */,
+				04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */,
+				33A7D0F2D03004CE256A75E03DF33C70 /* RetryPolicy.swift in Sources */,
+				B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */,
+				81B8D2B7CEB25C2448B0BC9B33591A65 /* Session.swift in Sources */,
+				1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */,
+				7F1BB526AAE3ECDCE90127D9D0E10261 /* StringEncoding+Alamofire.swift in Sources */,
+				8D75FC8D7476C9674234F39F1A820D8C /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				7930C94414B4C661867AC4FBE82E996C /* URLEncodedFormEncoder.swift in Sources */,
+				BC0ECA8F22DEDE8886E189CD0EAA1197 /* URLRequest+Alamofire.swift in Sources */,
+				808C960C82D708FC1A42C581D6CB4940 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				3C4059621E23842C19D4EB5D35B41989 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		676FDD47E8774908C2571029570CEE66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 3449F6B33ED387024715512EBF41E738 /* PBXContainerItemProxy */;
+		};
+		8C2FB0FB8176AFB3A4646B2DA0BEABE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleBooksApiClient;
+			target = 3C432FFBAA7B7EF1F916A0FA68875DB5 /* GoogleBooksApiClient */;
+			targetProxy = 6884C9437EBC71004861C8622CC40CA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		299C29CAAEAF55D6F9220CAC8D9FAFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772B959D718CEA106F08C4637B9DB566 /* GoogleBooksApiClient.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleBooksApiClient/GoogleBooksApiClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleBooksApiClient/GoogleBooksApiClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GoogleBooksApiClient/GoogleBooksApiClient.modulemap";
+				PRODUCT_MODULE_NAME = GoogleBooksApiClient;
+				PRODUCT_NAME = GoogleBooksApiClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		767CA25DD107388E8AEDDF73100CAAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2B7922B515FCC2D38D49179E340F7C /* GoogleBooksApiClient.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleBooksApiClient/GoogleBooksApiClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleBooksApiClient/GoogleBooksApiClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GoogleBooksApiClient/GoogleBooksApiClient.modulemap";
+				PRODUCT_MODULE_NAME = GoogleBooksApiClient;
+				PRODUCT_NAME = GoogleBooksApiClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		90A4588B06F8745E7FCD1B00204D6241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84CC0A61419629430EFD62AE95651051 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E98C04A5FA16D8AD5D48C1861179497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C7609CDEA83EF7505CC48149B902C1 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E558FDA36E98A85999273D14AA12E2DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48DDBE5C55DCAC7EE534162F2C7B8F51 /* Pods-GoogleBookApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoogleBookApp/Pods-GoogleBookApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoogleBookApp/Pods-GoogleBookApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAB0F28B975CCB2AD4F5D6D0A95769AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF5E579AC7AEED1A5CA68CA1DC9B3C3 /* Pods-GoogleBookApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoogleBookApp/Pods-GoogleBookApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoogleBookApp/Pods-GoogleBookApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2506533119638486DA638ADBC043AD24 /* Build configuration list for PBXNativeTarget "GoogleBooksApiClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767CA25DD107388E8AEDDF73100CAAF5 /* Debug */,
+				299C29CAAEAF55D6F9220CAC8D9FAFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC7450F9457737EE3E637BA155B56F7 /* Debug */,
+				8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A212264186B8822192F9C369D7DE4BB /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E98C04A5FA16D8AD5D48C1861179497 /* Debug */,
+				90A4588B06F8745E7FCD1B00204D6241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A15A2CCC0AAA8B426A33B0A57EC8C7C2 /* Build configuration list for PBXNativeTarget "Pods-GoogleBookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB0F28B975CCB2AD4F5D6D0A95769AF /* Debug */,
+				E558FDA36E98A85999273D14AA12E2DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import GoogleBooksApiClient
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var searchBtn: UIImageView!
+  @IBOutlet weak var searchTxtField: UITextField!
+  @IBOutlet weak var searchResultCollectionView: UICollectionView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    
   }
 
 

@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.5.0)
+  - GoogleBooksApiClient (0.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - GoogleBooksApiClient
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleBooksApiClient
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  GoogleBooksApiClient: a2c931bcfa2d5251a2ed7945f7a424f7a720563b
+
+PODFILE CHECKSUM: 62f898ee324bd2d6cbfe4f2fb70a069dab69fbb0
+
+COCOAPODS: 1.11.2
