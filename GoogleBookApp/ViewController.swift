@@ -17,9 +17,19 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapOnSearchButton(_:)))
+    searchBtn.addGestureRecognizer(tapGesture)
+    searchBtn.isUserInteractionEnabled = true
   }
 
+  @objc
+  func tapOnSearchButton(_ sender: UITapGestureRecognizer) {
+    guard let searchBook = searchTxtField.text else { return }
+    ApiClient.shared.getGoogleBook(searchBook: searchBook) { bookInfo in
+//      print(bookInfo.items.first?.volumeInfo.title)
+      print(bookInfo)
+    }
+  }
 
 }
 

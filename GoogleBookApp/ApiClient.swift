@@ -8,29 +8,34 @@
 import Alamofire
 
 class ApiClient {
+  static let shared = ApiClient()
+  
   var googleApiBaseURL: String = "https://www.googleapis.com/books/v1/volumes?"
   var searchBook: String?
   
-  func getGoogleBook(searchBook: String, completionHandler: @escaping() -> Void) {
-    
+  func getGoogleBook(searchBook: String, completionHandler: @escaping(Book) -> Void) {
+
     let param = [ "q": searchBook ]
-//    AF.request(googleApiBaseURL,
-//               method: .get,
-//               parameters: param)
-//      .response { response in
-//        switch response.result {
-//        case .success(let data):
-//          do {
-//            let decoder = JSONDecoder()
-//            let result = try decoder.decode(CityCovidOverview.self, from: data)
-//            completionHandler(.success(result))
-//          } catch {
-//            completionHander(.failure(error))
-//          }
-//        case .failure(let error):
-//          print(error)
-//        }
-//      }
+
+    let connection = AF.request(googleApiBaseURL, method: .get, parameters: param).validate(statusCode: 200..<300)
+    
+    connection.responseString { response in
+      switch response.result {
+      case .success(let value):
+        let data = value.data(using: .utf8)
+        let decoder = JSONDecoder()
+        
+        guard let data = data,
+              let bookData = try? decoder.decode(Book.self, from: data) else {
+          return
+        }
+
+        completionHandler(bookData)
+                
+      case .failure(let error):
+        print(error.errorDescription ?? "Decoding 에러 발생")
+      }
+    }
   }
   
 }
