@@ -10,26 +10,19 @@ import GoogleBooksApiClient
 
 class ViewController: UIViewController {
 
-  @IBOutlet weak var searchBtn: UIImageView!
   @IBOutlet weak var searchTxtField: UITextField!
   @IBOutlet weak var searchResultCollectionView: UICollectionView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapOnSearchButton(_:)))
-    searchBtn.addGestureRecognizer(tapGesture)
-    searchBtn.isUserInteractionEnabled = true
   }
 
-  @objc
-  func tapOnSearchButton(_ sender: UITapGestureRecognizer) {
+  @IBAction func tapOnSearchButton(_ sender: UIButton) {
     guard let searchBook = searchTxtField.text else { return }
     ApiClient.shared.getGoogleBook(searchBook: searchBook) { bookInfo in
 //      print(bookInfo.items.first?.volumeInfo.title)
       print(bookInfo)
     }
   }
-
 }
 
